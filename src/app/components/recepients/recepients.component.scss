@@ -1,0 +1,30 @@
+@import '../../../variables';
+/* Hide scrollbar for Chrome, Safari and Opera */
+ul::-webkit-scrollbar {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  position: absolute;
+  top: 77px;
+  left: 16px;
+  height: 348px;
+  width: 608px;
+  overflow: scroll;
+  background-color: $ligh-background-color;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  li {
+    padding: 1rem 2rem;
+    
+    &:hover {
+      background-color: $light-gray-color;
+      cursor: pointer;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

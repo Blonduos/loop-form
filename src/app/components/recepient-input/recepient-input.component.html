@@ -1,0 +1,13 @@
+<div class="recepients-container">
+  <div *ngFor="let recepient of recepients; let i = index" (click)="recepients.splice(i, 1)">
+    <span> {{ recepient.name }}</span>
+  </div>
+  <input
+  type="text"
+  placeholder="{{placeholder}}"
+  (click)="toggleFocus()"
+  [(ngModel)]="filteredString"
+  >
+</div>
+<app-recepients *ngIf="showSentRecepientList" [filteredString]="filteredString"></app-recepients>
+

@@ -1,7 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-@import '_variables';
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,9 +8,9 @@
 
 body {
   padding: 5rem 0;
-  font-family: $font;
-  color: $dark-gray-color;
-  background-color: $dark-background-color;
+  font-family: "Roboto", sans-serif;
+  color: #616161;
+  background-color: #d0cfd4;
 }
 
 h3 {
@@ -22,43 +20,41 @@ h3 {
 
 p {
   font-size: 1.1rem;
-  color: $primary-color;
+  color: #9b9b9b;
 }
 
 button {
   display: inline-block;
-  font-family: $font;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: $ligh-background-color;
-  background-color: $accent-color;
+  color: #ffffff;
+  background-color: #2fb9db;
   padding: 0.5rem 2.9rem;
   border-radius: 20px;
   border: none;
   cursor: pointer;
   transition: background-color 200ms ease-in-out;
+}
 
-  &:hover,
-  &:focus {
-    background-color: $dark-accent-color;
-  }
+button:hover, button:focus {
+  background-color: #4e4580;
 }
 
 input {
-  color: $primary-color;
-  font-family: $font;
+  color: #9b9b9b;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   display: block;
   width: 100%;
   margin: 0 auto;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
   border: none;
-  border-left: 3px solid $dark-accent-color;
+  border-left: 3px solid #4e4580;
   border-radius: 2px;
+}
 
-  // I do not remove default outlines as they are necessary for accessibility reasons
-  &:focus {
-    outline: 1px solid $light-gray-color;
-  }
+input:focus {
+  outline: 1px solid #ededed;
 }
 
 textarea {
@@ -68,24 +64,23 @@ textarea {
 .container {
   max-width: 40rem;
   margin: 0 auto;
-  background: $ligh-background-color;
+  background: #ffffff;
   border-radius: 5px;
-  box-shadow: 0px 2px 13px 1px $primary-color;
+  box-shadow: 0px 2px 13px 1px #9b9b9b;
 }
 
 .container-item {
-  border-bottom: 2px solid $light-gray-color;
+  border-bottom: 2px solid #ededed;
   padding: 1rem;
 }
 
 .recepients-container {
   position: relative;
   padding: 0.3rem 1rem 0.5rem 1rem;
-
-  p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
 }
 
-
+.recepients-container p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+/*# sourceMappingURL=styles.css.map */

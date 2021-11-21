@@ -1,0 +1,14 @@
+<form class="container">
+  <div class="container-item">
+    <h3>How to save money on beauty products</h3>
+  </div>
+  <div class="container-item recepients-container">
+    <p>Share email with your teammmates</p>
+    <app-recepient-input 
+    (inputClick)="showRecepients()"
+    placeholder="{{ showRecepientList ? 'Type name or email address' : 'Add recepients'}}"
+    ></app-recepient-input>
+  </div>
+  <app-message></app-message>
+  <app-message-comment></app-message-comment>
+</form>

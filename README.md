@@ -1,27 +1,14 @@
-# LoopForm
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Some parts about the project I did not fix:
+- closing the recepients list when clicking outside of the Add recepients input field & outside of the recepients container
+  -- therefore one has to click twice on the input field to toggle showSentRecepientList value (true/false)
+- form does not reset after clicking Share
+- form still allows adding recepients after clicking Share
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Added:
+- clicking on one of the seelcted recepient's names will remove that recepient
+- one recepient cannot be added more than 1 time
+- textarea input field is mandatory and has basic validation

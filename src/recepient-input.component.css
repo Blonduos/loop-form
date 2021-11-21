@@ -1,0 +1,33 @@
+.recepients-container {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.recepients-container span {
+  display: inline-block;
+  color: #ffffff;
+  min-width: 140px;
+  background-color: #2fb9db;
+  padding: 6px 2px;
+  margin-top: 5px;
+  margin-right: 4px;
+  text-align: center;
+  margin-right: 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+}
+
+.recepients-container span:hover {
+  background-color: #4e4580;
+}
+
+.recepients-container input {
+  min-width: 300px;
+  margin-top: 5px;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+/*# sourceMappingURL=recepient-input.component.css.map */

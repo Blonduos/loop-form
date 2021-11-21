@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "app/components/button/button.component.scss"
+    ],
+    "names": [],
+    "file": "button.component.css"
+}

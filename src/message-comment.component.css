@@ -1,0 +1,41 @@
+.flex-end-container {
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-end-container textarea {
+  font-family: "Roboto", sans-serif;
+  color: #9b9b9b;
+  border: 3px solid #ededed;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  max-height: 60px;
+  width: 100%;
+  resize: none;
+}
+
+.flex-end-container textarea:focus {
+  outline: 2px solid #ededed;
+}
+
+.flex-end-container .shared-message-container {
+  width: 100%;
+  background-color: #ededed;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.flex-end-container .message-content {
+  color: black;
+  padding: 0.5rem;
+}
+
+.flex-end-container .message-recepients {
+  color: #4e4580;
+  padding: 0.1rem;
+}
+/*# sourceMappingURL=message-comment.component.css.map */

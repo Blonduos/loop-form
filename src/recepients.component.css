@@ -1,0 +1,33 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  position: absolute;
+  top: 77px;
+  left: 16px;
+  height: 348px;
+  width: 608px;
+  overflow: scroll;
+  background-color: #ffffff;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+ul li {
+  padding: 1rem 2rem;
+}
+
+ul li:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+ul li p {
+  margin: 0;
+}
+/*# sourceMappingURL=recepients.component.css.map */

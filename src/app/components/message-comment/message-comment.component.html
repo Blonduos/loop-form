@@ -1,0 +1,15 @@
+<form ngNativeValidate class="flex-end-container" [formGroup]="shareMessageForm" (ngSubmit)="shareMessage()">
+  <textarea id="message "type="text" formControlName="message" placeholder="Add a comment..." required minlength="4"></textarea>
+  <app-button 
+  text="Share" 
+  type="submit"
+  ></app-button>
+  <ng-container *ngIf="showSentRecepientList">
+    <div class="shared-message-container">Shared 
+      <span class="message-content">{{sharedMessage}}</span>
+       with 
+      <span class="message-recepients" *ngFor="let recepient of recepients; last as isLast">{{ recepient.name }}<span *ngIf="!isLast">, </span></span>
+    </div>
+  </ng-container>
+</form>
+

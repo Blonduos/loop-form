@@ -1,0 +1,8 @@
+<ng-container>
+  <ul>
+    <li *ngFor="let recepient of recepients  | filterRecepients:filteredString" (click) ="addRecepient(recepient)" >
+      <h3>{{recepient.name}}</h3>
+      <p>{{recepient.email}}</p>
+    </li>
+  </ul>
+</ng-container>
