@@ -1,17 +1,33 @@
 @import '../../../variables';
 
 .message-container {
+  position: relative;
   padding: 1rem;
   margin: 3rem 1rem 1rem 1rem;
-  border: 2px solid $light-gray-color;
   border-radius: 5px;
-  border-left: 5px solid $dark-accent-color;
   display: grid;
   grid-template-areas: "sender . time"
                        "recepients . number"
                        "message-content message-content message-content";
   justify-content: space-between;
+  border-right: 2px solid $dark-background-color;
+  border-top: 2px solid $dark-background-color;
+  border-bottom: 2px solid $dark-background-color;
+  border-radius: 5px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1.6px;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid $dark-accent-color;
+  }
 }
+
 
 .message-time,
 .message-recepients,

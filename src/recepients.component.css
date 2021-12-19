@@ -6,8 +6,9 @@ ul::-webkit-scrollbar {
 ul {
   list-style-type: none;
   position: absolute;
-  top: 77px;
-  left: 16px;
+  left: 0;
+  bottom: -357px;
+  right: 0;
   height: 348px;
   width: 608px;
   overflow: scroll;
@@ -16,6 +17,8 @@ ul {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  z-index: 2;
+  background: pink;
 }
 
 ul li {

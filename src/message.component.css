@@ -1,12 +1,27 @@
 .message-container {
+  position: relative;
   padding: 1rem;
   margin: 3rem 1rem 1rem 1rem;
-  border: 2px solid #ededed;
   border-radius: 5px;
-  border-left: 5px solid #4e4580;
   display: grid;
   grid-template-areas: "sender . time" "recepients . number" "message-content message-content message-content";
   justify-content: space-between;
+  border-right: 2px solid #d0cfd4;
+  border-top: 2px solid #d0cfd4;
+  border-bottom: 2px solid #d0cfd4;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.message-container::before {
+  content: "";
+  position: absolute;
+  top: -1.6px;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #4e4580;
 }
 
 .message-time,
