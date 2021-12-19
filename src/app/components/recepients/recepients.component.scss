@@ -6,14 +6,16 @@ ul::-webkit-scrollbar {
 ul {
   list-style-type: none;
   position: absolute;
-  top: 77px;
-  left: 16px;
+  left: 0;
+  bottom: -357.5px;
+  right: 0;
   height: 348px;
   width: 608px;
   overflow: scroll;
   background-color: $ligh-background-color;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  z-index: 2;
 
   li {
     padding: 1rem 2rem;

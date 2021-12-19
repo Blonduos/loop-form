@@ -8,6 +8,7 @@
   (click)="toggleFocus()"
   [(ngModel)]="filteredString"
   >
+  <app-recepients *ngIf="showSentRecepientList" [filteredString]="filteredString"></app-recepients>
 </div>
-<app-recepients *ngIf="showSentRecepientList" [filteredString]="filteredString"></app-recepients>
+
 
